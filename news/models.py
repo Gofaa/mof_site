@@ -10,5 +10,8 @@ class News(models.Model):
     image = models.ImageField(upload_to='news/')
     publish_time = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ['-publish_time']
+
     def __str__(self):
         return self.title

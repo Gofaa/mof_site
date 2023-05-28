@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'students',
     'news',
     'class_schedule',
+    'listeners',
     #packages
     'rest_framework',
     'corsheaders',
@@ -130,7 +131,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Tashkent"
 
 USE_I18N = True
 
@@ -143,7 +144,7 @@ USE_TZ = True
 STATIC_URL = "static/"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR/'media/'
-STATICFILES_DIRS = [BASE_DIR/'reactapp/build/static']
+STATICFILES_DIRS = [BASE_DIR/'media/']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
