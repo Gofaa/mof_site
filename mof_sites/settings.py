@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import corsheaders.middleware
@@ -20,7 +21,7 @@ SECRET_KEY = "django-insecure-v5we^0i09wsnwa(g^_i0^dwsj*r)))6o(6==ru+86c4#2xsksj
 #DEBUG = config('DEBUG', default=False, cast=bool)
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,10 +61,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-CORS_ORIGIN_WHITELIST = (
+CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'http://localhost:8000'
-)
+    'http://localhost:8000',
+]
 
 ROOT_URLCONF = "mof_sites.urls"
 
@@ -144,7 +145,8 @@ USE_TZ = True
 STATIC_URL = "static/"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR/'media/'
-STATICFILES_DIRS = [BASE_DIR/'media/']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
