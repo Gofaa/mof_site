@@ -66,7 +66,8 @@ MIDDLEWARE = [
 ]
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage',
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
@@ -77,7 +78,7 @@ ROOT_URLCONF = "mof_sites.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / 'reactapp/build']
+        "DIRS": []
         ,
         "APP_DIRS": True,
         "OPTIONS": {
@@ -99,7 +100,7 @@ WSGI_APPLICATION = "mof_sites.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "ENGINE": "django.db.backends.sqlite3",
         'NAME': 'mof_site',
         'USER': 'postgres',
         'PASSWORD': '20000404',
