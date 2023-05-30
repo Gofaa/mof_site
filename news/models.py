@@ -7,7 +7,7 @@ class News(models.Model):
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250)
     body = models.TextField()
-    image = models.ImageField(upload_to='news/')
+    image = models.ImageField(upload_to='media/news/')
     publish_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:

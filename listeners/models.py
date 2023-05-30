@@ -5,7 +5,7 @@ from django.db import models
 
 class Listeners(models.Model):
     full_name = models.CharField(max_length=150)
-    photo = models.ImageField(upload_to='listeners/', null=True, blank=True)
+    photo = models.ImageField(upload_to='media/listeners/', null=True, blank=True)
     description = models.TextField()
 
 

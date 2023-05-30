@@ -9,7 +9,7 @@ class Teachers(models.Model):
     education = models.CharField(max_length=200)
     academic_title = models.CharField(max_length=150)
     specialty = models.CharField(max_length=150)
-    photo = models.ImageField(upload_to='teacher_photo/', null=True, blank=True, validators=[FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png', 'tif', 'tiff'])])
+    photo = models.ImageField(upload_to='media/teacher_photo/', null=True, blank=True, validators=[FileExtensionValidator(allowed_extensions=['jpg', 'jpeg', 'png', 'tif', 'tiff'])])
     description = models.TextField()
 
     def __str__(self):
