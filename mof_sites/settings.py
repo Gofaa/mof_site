@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'news',
     'class_schedule',
     'listeners',
+    'ilmiy_ishlar',
     #packages
     'rest_framework',
     'corsheaders',
