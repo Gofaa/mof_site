@@ -27,7 +27,8 @@ urlpatterns = [
     path('api/teachers/', include('teachers.urls')),
     path('api/class_table/', include('class_schedule.urls')),
     path('api/listeners/', include('listeners.urls')),
-    path('api/scientific_work', include('ilmiy_ishlar.urls')),
+    path('api/scientific_work/', include('ilmiy_ishlar.urls')),
+    path('api/learning_process/', include('learning_process.urls')),
 
 
     #swagger

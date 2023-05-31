@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'class_schedule',
     'listeners',
     'ilmiy_ishlar',
+    'learning_process',
     #packages
     'rest_framework',
     'corsheaders',

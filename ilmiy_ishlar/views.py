@@ -9,5 +9,5 @@ class ScientificWorksListApiView(generics.ListAPIView):
 
 
 class ScientificWorksDetailApiView(generics.RetrieveAPIView):
-    queryset = ScientificWork
+    queryset = ScientificWork.objects.all()
     serializer_class = ScientificWorkSerializer
