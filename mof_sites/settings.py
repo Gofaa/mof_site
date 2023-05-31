@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'news',
     'class_schedule',
     'listeners',
-    'ilmiy_ishlar',
-    'learning_process',
+    'ilmiy_ishlar.apps.IlmiyIshlarConfig',
+    'learning_process.apps.LearningProcessConfig',
     #packages
     'rest_framework',
     'corsheaders',
@@ -77,6 +77,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = "mof_sites.urls"
 
 TEMPLATES = [
