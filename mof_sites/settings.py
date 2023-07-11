@@ -49,6 +49,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_yasg',
     'whitenoise.runserver_nostatic',
+    'user_agents',
+    'django_user_agents',
+    'ipware',
 ]
 
 REST_FRAMEWORK = {
@@ -83,7 +86,7 @@ ROOT_URLCONF = "mof_sites.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": []
+        "DIRS": [BASE_DIR / 'templates']
         ,
         "APP_DIRS": True,
         "OPTIONS": {

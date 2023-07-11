@@ -13,6 +13,9 @@ django-cors-headers = "*"
 drf-yasg = "*"
 gunicorn = "*"
 whitenoise = "*"
+django-user-agents = "*"
+django-ipware = "*"
+user-agents = "*"
 
 [dev-packages]
 
